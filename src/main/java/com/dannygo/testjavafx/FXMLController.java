@@ -8,18 +8,19 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 
 public class FXMLController implements Initializable {
-    
     @FXML
     private Label label;
-    
+    private int counter;
     @FXML
     private void handleButtonAction(ActionEvent event) {
         System.out.println("You clicked me!");
+        System.out.println("はろーわーるど。counter:" + counter++);
         label.setText("Hello World!");
     }
-    
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }
+
 }
