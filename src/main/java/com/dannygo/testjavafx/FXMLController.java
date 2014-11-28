@@ -6,6 +6,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
+import javafx.stage.Window;
 
 public class FXMLController implements Initializable {
     @FXML
@@ -21,6 +23,10 @@ public class FXMLController implements Initializable {
     @FXML
     private void handleButtonNewWindow(ActionEvent event) {
         System.out.println("新しいボタンを押したよ！");
+        Stage newStage = new Stage();
+        Window window = label.getScene().getWindow();
+        newStage.initOwner(window);
+        newStage.show();
     }
 
     @Override
