@@ -10,5 +10,6 @@
     <children>
         <Button fx:id="button" layoutX="106.0" layoutY="68.0" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="109.0" text="Click Me!" />
         <Label fx:id="label" layoutX="126.0" layoutY="146.0" minHeight="16" minWidth="69" />
+      <Button fx:id="buttonNewWindow" layoutX="116.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleButtonNewWindow" text="新しいウィンドウ" />
     </children>
 </AnchorPane>

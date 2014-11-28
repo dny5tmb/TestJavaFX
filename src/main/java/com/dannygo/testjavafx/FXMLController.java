@@ -18,6 +18,11 @@ public class FXMLController implements Initializable {
         label.setText("Hello World!");
     }
 
+    @FXML
+    private void handleButtonNewWindow(ActionEvent event) {
+        System.out.println("新しいボタンを押したよ！");
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
