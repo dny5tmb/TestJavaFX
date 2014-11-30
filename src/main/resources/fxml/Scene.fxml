@@ -6,10 +6,35 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.dannygo.testjavafx.FXMLController">
+<AnchorPane id="AnchorPane" prefHeight="490.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dannygo.testjavafx.FXMLController">
     <children>
         <Button fx:id="button" layoutX="106.0" layoutY="68.0" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="109.0" text="Click Me!" />
         <Label fx:id="label" layoutX="126.0" layoutY="146.0" minHeight="16" minWidth="69" />
       <Button fx:id="buttonNewWindow" layoutX="116.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleButtonNewWindow" text="新しいウィンドウ" />
+      <HBox layoutX="61.0" layoutY="305.0" prefHeight="100.0" prefWidth="324.0">
+         <children>
+            <VBox prefHeight="80.0" prefWidth="154.0">
+               <children>
+                  <RadioButton fx:id="tglAsa" mnemonicParsing="false" selected="true" text="あさ">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="aisatsu" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="tglHiru" mnemonicParsing="false" text="ひる" toggleGroup="$aisatsu" />
+                  <RadioButton fx:id="tglYoru" mnemonicParsing="false" text="よる" toggleGroup="$aisatsu" />
+               </children>
+            </VBox>
+            <VBox prefHeight="125.0" prefWidth="174.0">
+               <children>
+                  <RadioButton fx:id="tglJapanese" mnemonicParsing="false" selected="true" text="日本語">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="lang" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="tglEnglish" mnemonicParsing="false" text="英語" toggleGroup="$lang" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
     </children>
 </AnchorPane>
