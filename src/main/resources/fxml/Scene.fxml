@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
@@ -8,10 +9,10 @@
 
 <AnchorPane id="AnchorPane" prefHeight="490.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dannygo.testjavafx.FXMLController">
     <children>
-        <Button fx:id="button" layoutX="106.0" layoutY="68.0" onAction="#handleButtonAction" prefHeight="64.0" prefWidth="109.0" text="Click Me!" />
-        <Label fx:id="label" layoutX="126.0" layoutY="146.0" minHeight="16" minWidth="69" />
-      <Button fx:id="buttonNewWindow" layoutX="116.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleButtonNewWindow" text="新しいウィンドウ" />
-      <HBox layoutX="61.0" layoutY="305.0" prefHeight="100.0" prefWidth="324.0">
+        <Button fx:id="button" layoutX="41.0" layoutY="82.0" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="89.0" text="Click Me!" />
+        <Label fx:id="label" layoutX="85.0" layoutY="225.0" minHeight="16" minWidth="69" prefHeight="41.0" prefWidth="152.0" />
+      <Button fx:id="buttonNewWindow" layoutX="41.0" layoutY="46.0" mnemonicParsing="false" onAction="#handleButtonNewWindow" text="新しいウィンドウ" />
+      <HBox layoutX="41.0" layoutY="166.0" prefHeight="100.0" prefWidth="201.0">
          <children>
             <VBox prefHeight="80.0" prefWidth="154.0">
                <children>
@@ -36,5 +37,14 @@
             </VBox>
          </children>
       </HBox>
+      <MenuBar>
+        <menus>
+            <Menu mnemonicParsing="false" text="機能">
+              <items>
+                <MenuItem fx:id="menuOpenFile" mnemonicParsing="false" onAction="#handelFileOpen" text="ファイルを開く" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
     </children>
 </AnchorPane>

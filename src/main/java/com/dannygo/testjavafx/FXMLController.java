@@ -51,6 +51,11 @@ public class FXMLController implements Initializable {
         newStage.show();
     }
 
+    @FXML
+    private void handelFileOpen(ActionEvent event) {
+        System.out.println("ファイルオープンのメニューをクリックしたよ！");
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
